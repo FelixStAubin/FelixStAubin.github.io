@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Plombier</title>
+
+  <!-- Favicons -->
+  <link href="assets/images/Logo.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- RESET -->
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; transition: .4s;}
+    h1,h2,h3,h4,h5,h6,p {margin: 0;}
+    ul {padding: 0;}
+    li {list-style: none;}
+    img {max-width: 100%; height: auto; font-size: 14px; vertical-align: middle;}
+    .container {max-width: 1192px; padding-inline: 15px; margin-inline: auto;}
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <!-- Header -->
+  <style>
+    .header {padding: 0; background-color: transparent; width: 100%; position: fixed; z-index: 100; margin-top: 20px;}
+    .header .container {display: flex; align-items: center; justify-content: space-between;}
+    .header .logo img {width: 100%; height: auto; max-width: 85px; max-height: 100%;}
+    .header .button {font-weight: 500; background-color: #009fe3; color: #fff; padding: 6px 20px; border-radius: 20px;}
+    .header .button:hover {background-color: #fff; color: #009fe3;}
+    .header a:nth-last-child(2) {font-weight: 500; color: #fff; display: flex; align-items: center; gap: 6px; margin-inline: auto 15px; padding: 6px 18px; border-radius: 20px;}
+    .header a:nth-last-child(2) img {filter: brightness(50); }
+    .header a:nth-last-child(2):hover {color: #1d242d;}
+    .header a:nth-last-child(2):hover img {filter: brightness(0);}
+  </style>
+  <header id="header" class="header">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/images/logo.png" alt="" width="" height="">
+      </a>
+      <a href="mailto:info@plomberie-laval.ca" id="email-link">
+        <img src="assets/images/envelope-solid.svg" alt="Envelop Icon" width="20" height="20">
+        info@plomberie-laval.ca
+      </a>
+      <a class="button" href="index.html#about">About Us</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <style>
+    .hero {background: no-repeat center/cover url(assets/images/homepage-hero-background-scaled-1.jpg);}
+    /* .hero .wrapper {display: grid; grid-template-columns: auto 430px; align-items: center; gap: 76px;} */
+    .hero .content {text-align: center;}
+    .hero .content > :first-child {font-size: 62px;}
+    .hero .content p {font-size: 26px; margin-block: 10px 50px;}
+    .hero .content .button {font-weight: 500; background-color: #009fe3; color: #fff; padding: 6px 18px; border-radius: 20px;}
+    .hero .content .button:hover {background-color: #fff; color: #009fe3;}
+    .hero form {background-color: #fff; padding: 50px 30px; border-radius: 8px; box-shadow: 0 10px 14px 9px rgba(0 0 0 / .1);}
+    .hero form > :first-child {font-size: 24px; font-weight: 700; line-height: 36px; color: #3d66ae; margin-block: 0 35px;}
+    .hero form input {width: calc(100% - 30px); padding: 16px 14px; border: 1px solid #e2e2e2; margin-bottom: 30px;}
+    .hero form > p {font-size: 14px; color: #1d242d;}
+    .hero form button[type="submit"] {font-size: 12px; background-color: #009fe3; padding: 6px 18px; border: none; border-radius: 20px; color: #fff; margin-top: 35px;}
+  </style>
+  <section id="hero" class="hero section dark-background">
+    <div class="container">
+        <!-- <div class="wrapper"> -->
+          <div class="content">
+            <h2 data-aos="fade-up" data-aos-delay="100">Plomberie Pro-Drain</h2>
+            <p data-aos="fade-up" data-aos-delay="200">La référence dans le domaine de la plomberie.</p>
+            <a class="button" href="index.html#contact">Get Started</a>
+          </div>
+          <!-- <form method="post" action="">
+            <h3>Vous voulez prendre Rendez-vous?</h3>
+            <input type="text" name="name" placeholder="Nom:*" required>
+            <input type="text" name="address" placeholder="Address de Courriel:*" required>
+            <input type="tel" name="phone" placeholder="Numéro de Téléphone:">
+            <p>Notre équipe communiquera sous peu avec vous pour confirmer le rendez-vous!</p>
+            <button type="submit">PRENDRE RENDEZ-VOUS!</button>
+          </form> -->
+        <!-- </div> -->
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <style>
+    .about {padding-block: 70px;}
+    .about .wrapper {display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; align-items: center;}
+    .about .wrapper img {max-width: 500px;}
+    .about .content > :first-child {font-size: 44px; color: #3f3f3f; margin-bottom: 15px;}
+    .about .content p {line-height: 28px;}
+  </style>
+  <section id="about" class="about">
+    <div class="container">
+        <div class="wrapper">
+          <div class="content">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum eligendi qui quae rerum cupiditate obcaecati dicta ducimus earum, consequatur sint quam, id ea sit. Aspernatur ipsa nisi eaque id. Officiis ab eum ut qui accusamus, quibusdam tempore libero, numquam ex inventore, explicabo magni nobis hic in debitis ratione cupiditate illum! Magnam doloremque veritatis temporibus odit eos maiores a tempore perspiciatis laboriosam ipsum distinctio placeat, culpa blanditiis repudiandae repellat?</p>
+          </div>
+          <img src="assets/images/man-proud-himself.jpg" alt="Plumber" width="500" height="428">
+        </div>
+    </div>
+  </section>
+
+  <!-- Why-Us Section -->
+  <style>
+    .why-us {padding-block: 80px; background: linear-gradient(0deg, #ecf6ff 0%,rgba(255,255,255,0) 100%);}
+    .why-us .title {margin-bottom: 95px;}
+    .why-us .title > :first-child {font-size: 44px; text-align: center; color: #3f3f3f; margin: 0;}
+    .why-us .wrapper {display: grid; grid-template-columns: repeat(2, 1fr); gap: 46px;}
+    .why-us .content li {list-style: none; display: flex; justify-content: flex-start; gap: 15px;}
+    .why-us .content li:not(:last-child) {margin-bottom: 60px;}
+    .why-us .content li:nth-of-type(2) div {margin-left: 20px;}
+    .why-us .content li div > :first-child {display: block; font-size: 24px; color: #3d66ae; margin-bottom: 15px;}
+    .why-us .content li:nth-of-type(2) div > :first-child {color: #009fe3;}
+    .why-us .content p {color: #4a4e57; line-height: 28px; margin: 0;}
+    .why-us .info {position: relative;}
+    .why-us .info > img {border-radius: 15px 0 0 15px;}
+    .why-us .info .testimonial {position: absolute; top: 30%; right: 0; max-width: 435px; background: no-repeat 10% 0%/contain url(assets/images/testimonials-background.jpg); background-color: #fff; padding: 50px 30px; border-radius: 8px; box-shadow: 0px 30px 27px 0px rgba(37, 82, 142, 0.15);}
+    .why-us .info .testimonial p {color: 1d242d; line-height: 28px;}
+    .why-us .info .testimonial strong {display: block; font-size: 22px; color: #4f73b4; margin-bottom: 7px;}
+    .why-us .info .testimonial span {display: block; color: #1d242d; margin-bottom: 20px;}
+  </style>  
+  <section id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="title">
+          <h2>Pourquoi nous choisir?</h2>
+        </div>
+        <div class="wrapper">
+          <ul class="content">
+            <li>
+              <img src="assets/images/clock-regular.svg" alt="Clock Icon" width="80" height="80">
+              <div>
+                <strong>Urgence 24/7</strong>
+                <p>Nous offrons un service d’urgence disponible 24h sur 24, 7 jours sur 7, nos plombiers sont rapides, compétent et efficace, ils sont tous simplement les meilleurs en villes.</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/images/clipboard-regular.svg" alt="Clipboard Icon" width="60" height="80">
+              <div>
+                <strong>Plombiers Certifiés</strong>
+                <p>Tous nos plombiers sont certifiés RBQ & CMMTQ, nous disposons donc des plus hautes certifications en plomberie, voyez pourquoi nous sommes la référence sur le marché avec nos travaux de qualités.</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/images/thumbs-up-regular.svg" alt="Thumbs-Up Icon" width="80" height="80">
+              <div>
+                <strong>Travaux Garanties</strong>
+                <p>Tous nos travaux sont garanties à 100%.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="info">
+            <img src="assets/images/testimonial-image.jpg" alt="Samantha Robert Portrait" width="157" height="186">
+            <div class="testimonial">
+              <p>Ce sont tous simplement les meilleurs plombiers que j’ai jamais utilisé, ils sont rapides, efficaces et compétents.</p>
+              <strong>Samantha Robert</strong>
+              <span>Longueuil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <style>
+    .services {padding-block: 80px;}
+    .services .title {margin-bottom: 105px;}
+    .services .title > :first-child {font-size: 44px; font-weight: 700; text-align: center; color: #3f3f3f;}
+    .services .wrapper {display: grid; grid-template-columns: repeat(3, 1fr); gap: 46px;}
+    .services .item {text-align: center; padding: 50px 30px; background: linear-gradient(180deg, #ffffff 67%,#f2f6fb 100%); border-radius: 8px; box-shadow: 0px 10px 24px 8px rgba(146,176,209,0.3);}
+    .services .item img {display: block; margin: 0 auto 30px;}
+    .services .item strong {font-size: 24px; color: #3f3f3f;}
+  </style>
+  <section id="services" class="services section">
+    <div class="container " data-aos="fade-up">
+      <div class="title">
+        <h2>Quelques uns de nos Services</h2>
+      </div>
+      <div class="wrapper">
+        <div class="item">
+          <img src="assets/images/urgent.png" alt="" width="145" height="145">
+          <strong>Plomberie d’Urgence</strong>          
+        </div>
+        <div class="item">
+          <img src="assets/images/home.png" alt="" width="180" height="180">
+          <strong>Plomberie Résidentielle</strong>          
+        </div>
+        <div class="item">
+          <img src="assets/images/commercial.png" alt="" width="230" height="230">
+          <strong>Plomberie Commerciale</strong>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <style>
+    .contact {padding-block: 82px 150px; background: linear-gradient(0deg, rgba(102, 169, 214, 0.63) 0%, rgba(0, 0, 0, 0.04) 66%), no-repeat center/cover url(assets/images/lower-call-to-action-background-scaled-1.jpg);}
+    .contact .cta * {margin: 0;}
+    .contact .cta > :first-child::before,
+    .contact .cta > :first-child::after {content: none;}
+    .contact .cta > :first-child {font-size: 64px; color: #3f3f3f; margin-bottom: 15px;}
+    .contact .cta > :nth-child(2) {font-size: 24px; color: #3f3f3f; margin-bottom: 35px;}
+    .contact .cta .button {display: flex; align-items: center; justify-content: center; gap: 15px; width: fit-content; font-size: 18px; font-weight: 700; background-color: #fff; color: #009fe3; padding: 10px 30px; border-radius: 50px; margin-inline: auto;}
+    .contact .cta .button:hover {background-color: #009fe3; color: #fff;}
+    .contact .cta .button:hover img {filter: brightness(50);}
+  </style>
+  <section id="contact" class="contact section">
+    <div class="container section-title" data-aos="fade-up">
+      <div class="cta">
+        <h2>Appelez-nous Maintenant!</h2>
+        <h3>Un problème? Nous avons la solution!</h3>
+        <a href="#" class="button">
+          <img src="assets/images/phone-solid.svg" alt="Phone Icon" width="19" height="19">
+          (33) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <style>
+    .footer .wrapper {display: flex; align-items: center; justify-content: space-between;}
+    .footer .wrapper * {display: block;}
+    .footer .links a {display: flex; align-items: center; justify-content: flex-start; gap: 10px; color: #3f3f3f; margin-bottom: 10px;}
+    .footer .links a:first-of-type {margin-bottom: 25px;}
+    .footer .status strong {font-size: 28px; color: #3d66ae; margin-bottom: 35px;}
+  </style>
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="wrapper">
+        <div class="links">
+          <a href="#" class="logo">
+            <img src="assets/images/Logo.png" alt="Logo" width="70" height="44">
+          </a>
+          <a href="#">
+            <img src="assets/images/phone-solid-blue.svg" alt="Phone Icon" width="14" height="14">
+            (33) 123-4567
+          </a>
+          <a href="#">
+            <img src="assets/images/envelope-solid.svg" alt="Phone Icon" width="14" height="14">
+            info@plomberie-laval.ca
+          </a>
+        </div>
+        <div class="status">
+          <strong>Accreditation</strong>
+          <img src="assets/images/cmmtq.jpg" alt="CMMTQ" width="56" height="18">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- ( RESPONSIVE ) -->
+  <style>
+    @media only screen and (max-width: 1200px) {
+      .container {max-width: 1024px;}
+      .header .container {flex-direction: row-reverse;}
+      .hero .content > :first-child {font-size: 56px;}
+      .hero .content p {font-size: 24px; margin-bottom: 36px;}
+      /* .hero .wrapper {gap: 48px;} */
+      .about .content > :first-child {font-size: 40px;}
+      .why-us .title {margin-bottom: 50px;}
+      .why-us .title > :first-child {font-size: 40px;}
+      .why-us .content li:not(:last-child) {margin-bottom: 48px;}
+      .why-us .content li div > :first-child {font-size: 22px; margin-bottom: 10px;}
+      .services .title {margin-bottom: 70px;}
+      .services .title > :first-child {font-size: 40px;}
+      .services .item strong {font-size: 22px;}
+      .contact {padding-bottom: 80px;}
+      .contact .cta > :first-child {font-size: 56px; margin-bottom: 10px;}
+      .footer .status strong {font-size: 26px;}
+    }
+
+    @media only screen and (max-width: 991px) {
+      .container {max-width: 900px;}
+      .hero .content > :first-child {font-size: 50px;}
+      .hero .content p {font-size: 22px; margin-block: 5px 32px;}
+      .about .wrapper {gap: 30px;}
+      .about .wrapper img {width: 100%; margin-inline: auto; max-width: 350px;}
+      .about .content > :first-child {font-size: 36px; margin-bottom: 10px;}
+      .why-us .wrapper {grid-template-columns: 1fr;}
+      .why-us .title > :first-child {font-size: 36px;}
+      .why-us .info > img {width: 100%; max-width: 260px;}
+      .why-us .info .testimonial {left: 0; margin-inline: auto;}
+      .why-us .content li:not(:last-child) {margin-bottom: 32px;}
+      .services .wrapper {grid-template-columns: repeat(2, 1fr); gap: 30px;}
+      .services .title > :first-child {font-size: 36px;}
+      .services .title {margin-bottom: 50px;}
+      .contact .cta > :nth-child(2) {font-size: 22px; margin-bottom: 30px;}
+      .contact .cta > :first-child {font-size: 48px;}
+      .contact .cta > :nth-child(2) {margin-bottom: 20px;}
+      .contact .container {padding-bottom: 40px;}
+      .footer .wrapper {align-items: flex-start;}
+    }
+
+    @media only screen and (max-width: 767px) {
+      .hero .content > :first-child {font-size: 42px;}
+      .hero .content p {font-size: 20px; margin-block: 5px 24px;}
+      .about {padding-block: 40px;}
+      .about .wrapper {grid-template-columns: 1fr;}
+      .about .content > :first-child {font-size: 32px; margin-bottom: 5px;}
+      .about .wrapper img {max-width: 400px; order: -1;}
+      .why-us .title {margin-bottom: 40px;}
+      .why-us .title > :first-child {font-size: 32px;}
+      .why-us {padding-block: 50px 70px;}
+      .why-us .info .testimonial {top: 40%; left: 20%; padding: 30px 20px;}
+      .why-us .content li {align-items: flex-start;}
+      .why-us .content li img {max-width: 60px;}
+      .why-us .content li:nth-last-of-type(2) img {max-width: 50px;}
+      .why-us .content li div > :first-child {font-size: 20px; margin-bottom: 5px;}
+      .why-us .content li:nth-of-type(2) div {margin-left: 10px;}
+      .services {padding-block: 50px;}
+      .services .title > :first-child {font-size: 32px;}
+      .services .item {padding: 30px 20px;}
+      .services .item strong {font-size: 20px;}
+      .services .item img {margin-bottom: 20px;}
+      .contact {padding-block: 50px;}
+      .contact .cta > :first-child {font-size: 40px;}
+      .contact .cta > :nth-child(2) {font-size: 20px;}
+      .contact .container {padding-bottom: 20px;}
+      .footer {padding-bottom: 30px;}
+      .footer .footer-top {padding-top: 30px;}
+      .footer .status strong {font-size: 24px;}
+    }
+
+    @media only screen and (max-width: 575px) {
+      .header .logo img {max-width: 60px;}
+      .hero .content > :first-child {font-size: 36px;}
+      .hero .content p {font-size: 18px;}
+      .header .button,
+      .hero .content .button {padding: 4px 14px; font-size: 15px;}
+      .about .content > :first-child {font-size: 30px;}
+      .why-us {padding-bottom: 200px;}
+      .why-us .title > :first-child {font-size: 30px;}
+      .why-us .content li div > :first-child {font-size: 18px;}
+      .why-us .content li img {max-width: 50px;}
+      .why-us .content li:nth-last-of-type(2) img {max-width: 40px;}
+      .why-us .info {display: flex; justify-content: center;}
+      .why-us .info .testimonial {top: 70%; left: 0;}
+      .why-us .info > img {max-width: 200px;}
+      .why-us .info .testimonial strong {font-size: 20px;}
+      .services .title {margin-bottom: 40px;}
+      .services .title > :first-child {font-size: 28px;}
+      .services .wrapper {grid-template-columns: 1fr;}
+      .services .item img {margin-bottom: 10px;}
+      .contact .container {padding-bottom: 0;}
+      .contact .cta > :first-child {font-size: 32px;}
+      .contact .cta > :nth-child(2) {font-size: 18px;}
+      .contact .cta .button {padding: 6px 18px; font-size: 15px;}
+      .footer .wrapper {flex-direction: column; gap: 30px;}
+      .footer .status strong {margin-bottom: 20px;}
+    }
+
+    @media only screen and (max-width: 475px) {
+      .hero .content > :first-child {font-size: 32px;}
+      .hero .content p {font-size: 16px;}
+      .about .content > :first-child {font-size: 28px;}
+      .about .content p {font-size: 15px; line-height: 24px;}
+      .why-us .content li {flex-direction: column;}
+      .why-us .content li:nth-of-type(2) div {margin: 0;}
+      .why-us .info .testimonial strong {font-size: 18px; margin: 0;}
+      .why-us .info .testimonial span {margin-bottom: 10px;}
+      .services .title > :first-child {font-size: 24px;}
+      .services .item {padding: 15px;}
+      .contact .cta > :first-child {font-size: 26px; margin-bottom: 5px;}
+      .contact .cta > :nth-child(2) {font-size: 16px;}
+      .contact .cta .button {font-size: 14px;}
+    }
+  </style>
+
+  <script>
+    const emailLink = document.querySelector('#email-link');
+    window.addEventListener('scroll', () => {
+        if (scrollY > 600) {
+            emailLink.style.color = '#009fe3';
+            emailLink.style.backgroundColor = '#fff';
+            emailLink.firstElementChild.style.filter = 'invert(54%) sepia(97%) saturate(2712%) hue-rotate(164deg) brightness(91%) contrast(103%)';
+        } else {
+            emailLink.style.color = '#fff';
+            emailLink.style.backgroundColor = 'transparent';
+            emailLink.firstElementChild.style.filter = '';
+        }
+    });
+  </script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
